@@ -9,7 +9,7 @@ if test -d /opt/homebrew; then
 fi
 
 # Interactive mode only
-if [[ $- == *i* ]]; then
+if test -z "$PS1"; then
    return
 fi
 
