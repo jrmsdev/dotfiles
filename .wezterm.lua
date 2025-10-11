@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 
 return {
+  enable_tab_bar = false,
   color_scheme = "Builtin",
   colors = {
     foreground = "#cccccc",
@@ -10,8 +11,7 @@ return {
   },
   font = wezterm.font("Monaco"),
   font_size = 18.0,
-  line_height = 1.2,
-  cursor_style = "BlinkingBar",
+  line_height = 1.1,
   window_padding = {
     left = 0,
     right = 0,
