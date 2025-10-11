@@ -29,5 +29,6 @@ echo "Dest: ${PREFIX}"
 install -v -d -m "${DIR_MODE}" "${PREFIX}"
 
 install_file .vimrc
+install_file .wezterm.lua
 
 exit 0

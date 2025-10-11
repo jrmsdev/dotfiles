@@ -1,3 +1,5 @@
+-- jrmsdev/dotfiles .wezterm.lua
+
 local wezterm = require 'wezterm'
 
 return {
