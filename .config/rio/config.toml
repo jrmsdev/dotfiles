@@ -2,15 +2,12 @@
 padding_x = 0
 padding_y = 0
 
-[colors]
-background = "#111111"
-foreground = "#cccccc"
-cursor = "#cccccc"
-
-[font]
+[fonts]
 family = "Monaco"
-size = 18.0
+size = 18
 line_height = 1.2
 
-[cursor]
-shape = "bar"
+[colors]
+background = '#111111'
+foreground = '#CCCCCC'
+cursor = '#CCCCCC'
