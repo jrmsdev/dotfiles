@@ -1,6 +1,9 @@
 [window]
 padding_x = 0
 padding_y = 0
+startup_mode = "Maximized"
+width = 1200 # in px
+height = 800 # in px
 
 [fonts]
 family = "Monaco"
@@ -11,3 +14,6 @@ line_height = 1.2
 background = '#111111'
 foreground = '#CCCCCC'
 cursor = '#CCCCCC'
+
+[bell]
+enabled = false
