@@ -1,0 +1,16 @@
+[window]
+padding_x = 0
+padding_y = 0
+
+[colors]
+background = "#111111"
+foreground = "#cccccc"
+cursor = "#cccccc"
+
+[font]
+family = "Monaco"
+size = 18.0
+line_height = 1.2
+
+[cursor]
+shape = "bar"
