@@ -1,4 +1,5 @@
 .gitignore
+check.sh
 install.sh
 ls-files.ignore
 ls-files.sh
