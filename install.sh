@@ -55,7 +55,6 @@ install_symlink .bash_profile
 install_symlink .bashrc
 install_symlink .config/kitty/kitty.conf
 install_symlink .config/rio/config.toml
-install_symlink .gitignore
 install_symlink .vimrc
 install_symlink .wezterm.lua
 
