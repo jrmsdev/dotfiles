@@ -2,6 +2,7 @@
 
 umask 0027
 
+# shellcheck disable=SC1091
 if test -d /opt/homebrew; then
   export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
@@ -24,6 +25,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# shellcheck disable=SC1090
 if test -s ~/.bashrc.local; then
 	source ~/.bashrc.local
 fi
