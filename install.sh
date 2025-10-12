@@ -5,7 +5,7 @@ umask 0027
 
 PATH=/usr/bin:/bin
 DIR_MODE=0750
-FILE_MODE=0640
+#FILE_MODE=0640
 BUP_TSTAMP=$(date '+%Y%m%d-%H%M%S')
 
 PREFIX=${PREFIX:-${HOME}}
@@ -20,15 +20,15 @@ install_source_check() {
 	return 0
 }
 
-install_file() {
-	local filename=$1
-	install_source_check "${filename}"
-	local src=${PWD}/${filename}
-	local dst=${PREFIX}/${filename}
-	local bup=${filename}.${BUP_TSTAMP}
-	install -v -C -m "${FILE_MODE}" -b -B "${bup}" "${src}" "${dst}"
-	return $?
-}
+#install_file() {
+#	local filename=$1
+#	install_source_check "${filename}"
+#	local src=${PWD}/${filename}
+#	local dst=${PREFIX}/${filename}
+#	local bup=${filename}.${BUP_TSTAMP}
+#	install -v -C -m "${FILE_MODE}" -b -B "${bup}" "${src}" "${dst}"
+#	return $?
+#}
 
 install_symlink() {
 	local filename=$1
@@ -51,11 +51,8 @@ echo "Dest: ${PREFIX}"
 
 install -v -d -m "${DIR_MODE}" "${PREFIX}"
 
-install_symlink .bash_profile
-install_symlink .bashrc
-install_symlink .config/kitty/kitty.conf
-install_symlink .config/rio/config.toml
-install_symlink .vimrc
-install_symlink .wezterm.lua
+./ls-files.sh | while read -r filename; do
+	install_symlink "${filename}"
+done
 
 exit 0
