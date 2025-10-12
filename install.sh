@@ -40,6 +40,8 @@ install_symlink() {
 		if ! test -L "${dst}"; then
 			mv -vf "${dst}" "${PREFIX}/${bup}"
 		fi
+	else
+		mkdir -vp "$(dirname "${dst}")"
 	fi
 	ln -vsf "${src}" "${dst}"
 }
@@ -49,7 +51,12 @@ echo "Dest: ${PREFIX}"
 
 install -v -d -m "${DIR_MODE}" "${PREFIX}"
 
+install_symlink .bash_profile
+install_symlink .bashrc
+install_symlink .config/kitty/kitty.conf
+install_symlink .config/rio/config.toml
+install_symlink .gitignore
 install_symlink .vimrc
-install_file .wezterm.lua
+install_symlink .wezterm.lua
 
 exit 0
