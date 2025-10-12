@@ -22,16 +22,26 @@ install_source_check() {
 
 install_file() {
 	local filename=$1
+	install_source_check "${filename}"
 	local src=${PWD}/${filename}
 	local dst=${PREFIX}/${filename}
 	local bup=${filename}.${BUP_TSTAMP}
-	install_source_check "${filename}"
-	grep -F "jrmsdev/dotfiles ${filename}" "${src}" >/dev/null || {
-		echo "ERROR: jrmsdev/dotfiles ${filename} - install not enabled" >&2
-		return 9
-	}
 	install -v -C -m "${FILE_MODE}" -b -B "${bup}" "${src}" "${dst}"
-	return 0
+	return $?
+}
+
+install_symlink() {
+	local filename=$1
+	install_source_check "${filename}"
+	local src=${PWD}/${filename}
+	local dst=${PREFIX}/${filename}
+	local bup=${filename}.${BUP_TSTAMP}
+	if test -e "${dst}"; then
+		if ! test -L "${dst}"; then
+			mv -vf "${dst}" "${PREFIX}/${bup}"
+		fi
+	fi
+	ln -vsf "${src}" "${dst}"
 }
 
 echo "Source: ${PWD}"
@@ -39,7 +49,7 @@ echo "Dest: ${PREFIX}"
 
 install -v -d -m "${DIR_MODE}" "${PREFIX}"
 
-install_file .vimrc
+install_symlink .vimrc
 install_file .wezterm.lua
 
 exit 0
