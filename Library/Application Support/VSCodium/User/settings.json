@@ -1,0 +1,62 @@
+{
+	// jrmsdev/dotfiles Library/Application Support/VSCodium/User/settings.json
+    "workbench.colorTheme": "Monokai",
+    "editor.fontSize": 15,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.accessibilitySupport": "off",
+    "editor.allowVariableFonts": false,
+    "editor.allowVariableLineHeights": false,
+    "html.format.wrapLineLength": 80,
+    "editor.wordWrap": "on",
+
+    // Quiet Mode: disable most visual interruptions
+
+    // Disable hover popups (the tooltips that appear when hovering keywords)
+    "editor.hover.enabled": false,
+
+    // Disable inline parameter hints
+    "editor.parameterHints.enabled": false,
+
+    // Disable automatic suggestions as you type
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+
+    // Disable suggestions triggered by typing certain characters (like . or :)
+    "editor.suggestOnTriggerCharacters": false,
+
+    // Don’t automatically show IntelliSense suggestions when typing
+    "editor.wordBasedSuggestions": "off",
+
+    // Disable lightbulb/code action popups
+    "editor.lightbulb.enabled": "off",
+
+    // Disable signature help when typing function calls
+    "editor.signatureHelp.enabled": false,
+
+    // Disable snippet suggestions
+    "editor.snippetSuggestions": "none",
+
+    // Disable inline suggestions (ghost text)
+    "editor.inlineSuggest.enabled": false,
+
+    // Disable automatic documentation popups (especially for extensions like Docker, Python, etc.)
+    "editor.inlayHints.enabled": "off",
+
+    // Disable error popups (you’ll still see squiggly lines)
+    "editor.showHover": false,
+
+    // Disable parameter hints when typing
+    "editor.parameterHints.cycle": false,
+
+    // Disable suggestion details pane (extra docs on the right side)
+    "editor.suggest.showStatusBar": false,
+
+    // Optional: prevent suggestions from showing at all (manual trigger still works with Ctrl+Space)
+    "editor.suggest.showWords": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.settings.applyToAllProfiles": []
+}
