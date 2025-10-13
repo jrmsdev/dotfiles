@@ -43,6 +43,7 @@ install_symlink() {
 	else
 		mkdir -vp "$(dirname "${dst}")"
 	fi
+	echo -n 'Symlink: '
 	ln -vsf "${src}" "${dst}"
 }
 
