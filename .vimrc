@@ -4,10 +4,9 @@ au BufRead,BufNewFile *.tf set filetype=terraform
 au BufRead,BufNewFile *.tfvars set filetype=terraform
 
 syntax on
-set number
 
-colorscheme desert
 set bg=dark
+colorscheme default
 
 set tabstop=4
 set shiftwidth=4
