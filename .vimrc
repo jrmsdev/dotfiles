@@ -1,5 +1,7 @@
 " jrmsdev/dotfiles .vimrc
 
+au BufRead,BufNewFile *.tf set filetype=terraform
+
 syntax on
 set number
 
