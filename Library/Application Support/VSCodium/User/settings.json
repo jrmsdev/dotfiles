@@ -1,5 +1,5 @@
 {
-	// jrmsdev/dotfiles Library/Application Support/VSCodium/User/settings.json
+    // jrmsdev/dotfiles Library/Application Support/VSCodium/User/settings.json
     "workbench.colorTheme": "Monokai",
     "editor.fontSize": 15,
     "workbench.editor.empty.hint": "hidden",
@@ -56,7 +56,15 @@
 
     // Optional: prevent suggestions from showing at all (manual trigger still works with Ctrl+Space)
     "editor.suggest.showWords": false,
+
     "files.insertFinalNewline": true,
+
+    // Remove final empty lines at the end of the file
     "files.trimFinalNewlines": true,
+
+    // Remove lines that contain only whitespace (e.g., blank indented lines)
+    "editor.renderWhitespace": "all",
+    "editor.trimAutoWhitespace": true,
+
     "workbench.settings.applyToAllProfiles": []
 }
