@@ -66,5 +66,6 @@
     "editor.renderWhitespace": "all",
     "editor.trimAutoWhitespace": true,
 
-    "workbench.settings.applyToAllProfiles": []
+    "workbench.settings.applyToAllProfiles": [],
+    "editor.minimap.enabled": false
 }
