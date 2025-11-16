@@ -1,9 +1,11 @@
 " jrmsdev/dotfiles .vimrc
 
+" terraform file detect
 au BufRead,BufNewFile *.tf set filetype=terraform
 au BufRead,BufNewFile *.tfvars set filetype=terraform
 
 syntax on
+filetype plugin indent on
 
 set bg=dark
 "colorscheme default
