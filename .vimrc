@@ -8,9 +8,14 @@ syntax on
 filetype plugin indent on
 
 set bg=dark
+
 "colorscheme default
 "colorscheme desert
-colorscheme ron
+"colorscheme ron
+"colorscheme elflord
+"colorscheme sorbet
+colorscheme wildcharm
+
 
 set tabstop=4
 set shiftwidth=4
