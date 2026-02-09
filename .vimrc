@@ -4,6 +4,9 @@
 au BufRead,BufNewFile *.tf set filetype=terraform
 au BufRead,BufNewFile *.tfvars set filetype=terraform
 
+" environment file detect
+au BufRead,BufNewFile environment set filetype=sh
+
 syntax on
 filetype plugin indent on
 
