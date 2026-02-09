@@ -12,7 +12,7 @@
     // Quiet Mode: disable most visual interruptions
 
     // Disable hover popups (the tooltips that appear when hovering keywords)
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
 
     // Disable inline parameter hints
     "editor.parameterHints.enabled": false,
