@@ -6,3 +6,4 @@ ls-files.sh
 LICENSE
 README.md
 Makefile
+prune.sh

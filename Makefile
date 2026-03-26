@@ -4,6 +4,11 @@ default:
 .PHONY: install
 install: check
 	@./install.sh
+	@./prune.sh
+
+.PHONY: prune
+prune:
+	@./prune.sh
 
 .PHONY: check
 check:
