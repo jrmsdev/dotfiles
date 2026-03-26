@@ -1,0 +1,3 @@
+# jrmsdev/dotfiles .bashrc.aliases
+
+alias kitty.app='open -a kitty.app -n --args'

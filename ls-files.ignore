@@ -5,3 +5,4 @@ ls-files.ignore
 ls-files.sh
 LICENSE
 README.md
+Makefile
