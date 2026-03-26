@@ -10,6 +10,9 @@ au BufRead,BufNewFile environment set filetype=sh
 syntax on
 filetype plugin indent on
 
+" in ms
+set redrawtime=10000
+
 set bg=dark
 
 "colorscheme default
@@ -18,7 +21,6 @@ set bg=dark
 "colorscheme elflord
 "colorscheme sorbet
 colorscheme wildcharm
-
 
 set tabstop=4
 set shiftwidth=4
