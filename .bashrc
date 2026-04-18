@@ -18,24 +18,23 @@ fi
 
 # Utils
 if test -s ~/Utils/.bashrc; then
-    source ~/Utils/.bashrc
+  source ~/Utils/.bashrc
 fi
 
 # Golang
 export GOPATH="${HOME}/Golang"
 if test -d "${GOPATH}/bin"; then
-    PATH="${GOPATH}/bin:${PATH}"
+  export PATH="${GOPATH}/bin:${PATH}"
 fi
 
 # Workspace
-PATH="${HOME}/Workspace/bin:${PATH}"
 if test -s ~/Workspace/.bashrc; then
-    source ~/Workspace/.bashrc
+  source ~/Workspace/.bashrc
 fi
 
 # Interactive mode only
 if test -z "$PS1"; then
-   return
+  return
 fi
 
 # Make bash check its window size after a process completes
@@ -48,9 +47,9 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 if test -s ~/.bashrc.aliases; then
-	source ~/.bashrc.aliases
+  source ~/.bashrc.aliases
 fi
 
 if test -s ~/.bashrc.local; then
-	source ~/.bashrc.local
+  source ~/.bashrc.local
 fi
