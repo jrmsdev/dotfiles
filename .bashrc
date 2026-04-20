@@ -17,8 +17,8 @@ if test -d /opt/homebrew; then
 fi
 
 # Utils
-if test -s ~/Utils/.bashrc; then
-  source ~/Utils/.bashrc
+if test -s ~/Utils/etc/bashrc; then
+  source ~/Utils/etc/bashrc
 fi
 
 # Golang
