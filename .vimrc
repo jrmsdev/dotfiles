@@ -1,5 +1,8 @@
 " jrmsdev/dotfiles .vimrc
 
+"Svelte TypeScript files detect
+au BufRead,BufNewFile *.svelte set filetype=typescript
+
 " terraform file detect
 au BufRead,BufNewFile *.tf set filetype=terraform
 au BufRead,BufNewFile *.tfvars set filetype=terraform
