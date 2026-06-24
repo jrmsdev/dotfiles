@@ -24,6 +24,10 @@ if test -d ~/docs; then
   chmod 0700 ~/docs
 fi
 
+if test -d ~/Applications; then
+  chmod 0700 ~/Applications
+fi
+
 if test -d ~/Archive; then
   chmod 0700 ~/Archive
 fi
