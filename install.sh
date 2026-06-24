@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-umask 0027
+umask 0077
 
 PATH=/usr/bin:/bin
 DIR_MODE=0750

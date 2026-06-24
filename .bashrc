@@ -3,7 +3,7 @@
 # shellcheck disable=SC1090
 # shellcheck disable=SC1091
 
-umask 0027
+umask 0077
 
 export LANG=en_US.UTF-8
 export TERM=xterm-256color
