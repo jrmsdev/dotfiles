@@ -3,7 +3,11 @@
 # Files
 
 if test -s ~/.gitconfig; then
-  chmod 0700 ~/.gitconfig
+  chmod 0600 ~/.gitconfig
+fi
+
+if test -s ~/.DS_Store; then
+  chmod 0600 ~/.DS_Store
 fi
 
 # Dirs

@@ -62,4 +62,5 @@ fi
 
 if test -s ~/.bashrc.local; then
   source ~/.bashrc.local
+  chmod 0600 ~/.bashrc.local
 fi
