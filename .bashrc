@@ -8,6 +8,8 @@ umask 0027
 export LANG=en_US.UTF-8
 export TERM=xterm-256color
 
+chmod 0700 "${HOME}"
+
 # Brew
 if test -d /opt/homebrew; then
   export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
@@ -19,17 +21,25 @@ fi
 # Utils
 if test -s ~/Utils/etc/bashrc; then
   source ~/Utils/etc/bashrc
+  chmod 0700 ~/Utils
 fi
 
 # Golang
 export GOPATH="${HOME}/Golang"
 if test -d "${GOPATH}/bin"; then
   export PATH="${GOPATH}/bin:${PATH}"
+  chmod 0700 "${GOPATH}"
 fi
 
 # Workspace
 if test -s ~/Workspace/.bashrc; then
   source ~/Workspace/.bashrc
+  chmod 0700 ~/Workspace
+fi
+
+# Home dir perms
+if test -s ~/.bashrc.perms; then
+  source ~/.bashrc.perms
 fi
 
 # Interactive mode only

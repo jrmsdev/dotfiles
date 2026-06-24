@@ -12,5 +12,5 @@ prune:
 
 .PHONY: check
 check:
-	@find . -type f -name '*.sh' | xargs shellcheck
-	@shellcheck -s bash .bash_profile .bashrc .bashrc.aliases
+	@git ls-files | grep -F '.sh' | xargs shellcheck
+	@shellcheck -s bash .bash_profile .bashrc .bashrc.aliases .bashrc.perms

@@ -1,0 +1,45 @@
+# jrmsdev/dotfiles .bashrc.perms
+
+# Files
+
+if test -s ~/.gitconfig; then
+  chmod 0700 ~/.gitconfig
+fi
+
+# Dirs
+
+if test -d ~/.config; then
+  chmod 0700 ~/.config
+fi
+
+if test -d ~/.local; then
+  chmod 0700 ~/.local
+fi
+
+if test -d ~/.vim; then
+  chmod 0700 ~/.vim
+fi
+
+if test -d ~/docs; then
+  chmod 0700 ~/docs
+fi
+
+if test -d ~/Archive; then
+  chmod 0700 ~/Archive
+fi
+
+if test -d ~/Docker; then
+  chmod 0700 ~/Docker
+fi
+
+if test -d ~/Geany; then
+  chmod 0700 ~/Geany
+fi
+
+if test -d ~/Github; then
+  chmod 0700 ~/Github
+fi
+
+if test -d ~/Temp; then
+  chmod 0700 ~/Temp
+fi
